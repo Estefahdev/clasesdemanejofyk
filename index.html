@@ -1,44 +1,403 @@
 <style>
+    /* General */
+    body {
+        font-family: 'Raleway', sans-serif !important;
+    }
 
+    /* header */
+    .desktopmenu1 {
+        display: block;
+    }
+
+    .menumobile1 {
+        display: none;
+    }
+
+    .bgheader1.desktopmenu1 {
+        background: black;
+        position: fixed;
+        width: 100%;
+    }
+
+    .bgbox1 {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
+        padding: 0px 90px;
+    }
+
+    .iconmage1 img {
+        width: 100px;
+        max-width: 100%;
+    }
+
+    .bxboxx12 {
+        display: flex;
+        gap: 70px;
+    }
+
+    .bxboxx12 a {
+        color: white;
+        text-decoration: unset;
+        font-size: 18px;
+    }
+
+    .bxboxx12 a:hover {
+        text-decoration: underline;
+        font-weight: bold;
+        color: white;
+    }
+
+    .socialmedia1 i {
+        color: white;
+        font-size: 29px;
+    }
+
+    .socialmedia1 {
+        display: flex;
+        gap: 23px;
+    }
+
+    .iconmage1 {
+        flex: 35% 0 0;
+    }
+
+    /* hero */
+    .backgroundhero {
+        background: url(images/instructor1.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+        background-color: #00000070;
+        /* padding: 170px 0px 100px; */
+        height: 750px;
+        background-position: center;
+    }
+
+
+    .bgboxhero {
+        TEXT-ALIGN: CENTER;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+    }
+
+    .title1 h1 {
+        color: white;
+        font-weight: bold;
+        font-size: 75px;
+        width: 600PX;
+        margin: auto;
+    }
+
+    .subtitlehero p {
+        width: 950px;
+        margin: auto;
+        color: white;
+        font-size: 19px;
+    }
+
+    .btnhero a {
+        color: white;
+        text-decoration: unset;
+        display: inline-block;
+        font-size: 19px;
+        background: #00bf62;
+        width: 387px;
+        max-width: 100%;
+        margin: auto;
+        border-radius: 46px;
+        padding: 15px 0px;
+    }
+
+    .btnhero a:hover {
+        font-weight: bold;
+        color: white;
+    }
+
+
+    /* benefits */
+    .background2 {
+        padding: 85px 0px;
+    }
+
+    .title2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .title2 h2 {
+        font-weight: bold;
+        font-size: 53px;
+        margin: auto;
+        width: 723px;
+        max-width: 100%;
+    }
+
+    .title2 p {
+        font-size: 18px;
+    }
+
+    .bgbox2 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+
+    .bx2 {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .bx2 p {
+        text-align: center;
+    }
+
+    .bx2 img {
+        width: 100px;
+        margin: auto;
+    }
+
+    .bx2 h3 {
+        font-weight: 600;
+    }
+
+    .iconborder {
+        border: solid;
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    /* responsive */
+    @media only screen and (max-width: 650px) {
+
+        /* header-responsive */
+        .menumobile1 {
+            display: block;
+        }
+
+        .desktopmenu1 {
+            display: none;
+        }
+
+        .mobile-main-menu {
+            width: 100%;
+            right: -100%;
+            max-width: 100%;
+            top: 0px;
+        }
+    }
 </style>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- javascript -->
+    <script src="javascriptcode.js"></script>
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/388554b322.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- HTML -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escuela de Manejo FyK</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <div class="bgheader1 desktopmenu1">
-        <div href="/" class="iconmage1">
-            <a href="/">
-                <img src="/images/ageMD_logo_450_1.png" alt="">
-            </a>
-        </div>
-        <div class="bxboxx12">
-            <a href="/about">Test Bitch</a>
-            <a href="/about/contact">Contact Us</a>
-            <a href="/aging-gracefully-podcast">Gallery</a>
-        </div>
-        <div class="headerbtn1">
-            <div class="heabtn1">
-                <a href="/list-your-practice">List Your Practice Today 1 test</a>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <!-- Header -->
+    <div class='header1'>
+        <div class="bgheader1 desktopmenu1">
+            <div class='bgbox1'>
+                <div class="iconmage1">
+                    <a href="">
+                        <img src="images/black-icon.png" alt="">
+                    </a>
+                </div>
+                <div class="bxboxx12">
+                    <a href="">Inicio</a>
+                    <a href="">Quienes Somos?</a>
+                    <a href="">Servicios</a>
+                    <a href="">Contactenos</a>
+                    <a href="">Galeria</a>
+                </div>
+                <div class='socialmedia1'>
+                    <a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
             </div>
-            <div class="heabtn1-2">
-                <a href="/account/home">Account</a>
-                <a href="/login">Log In</a>
+        </div>
+        <div class='menumobile1'>
+            <div class="menu1">
+                <div class="imgicon1">
+                    <img src="/images/ageMD_logo_450_1.png" alt="">
+                </div>
+                <div class="boxbtnbars">
+                    <div class="barsdes">
+                        <button type="button" class="navbar-toggle collapsed main_menu" data-toggle="collapse" aria-label="main_menu">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-main-menu">
+                <div class="bgbmovile">
+                    <div class="closebtn">
+                        <button type="button" class="navbar-toggle collapsed main_menu" data-toggle="collapse" aria-label="main_menu">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="bxboxmobi">
+                        <a href="">Inicio</a>
+                        <a href="">Quienes Somos?</a>
+                        <a href="">Servicios</a>
+                        <a href="">Contactenos</a>
+                        <a href="">Galeria</a>
+                    </div>
+                    <div class='line1'></div>
+                    <div class='socialmedia1'>
+                        <a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        <a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!-- hero -->
+    <div class='backgroundhero'>
+        <div class='container'>
+            <div class='bgboxhero'>
+                <div class='title1'>
+                    <h1>Aprenda a Manejar con FyK</h1>
+                </div>
+                <div class='subtitlehero'>
+                    <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                </div>
+                <div class='btnhero'>
+                    <a href="">Contactenos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- benefits -->
+    <div class='background2'>
+        <div class='container'>
+            <div class='title2'>
+                <h2>Beneficios de Aprender a Manejar con FyK</h2>
+                <p>Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+            </div>
+            <div class='bgbox2'>
+                <div class='bx2'>
+                    <div class="iconborder">
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/hnvrjtda.json" trigger="hover" colors="primary:#00bf62" style="width:100px;height:100px">
+                        </lord-icon>
+                    </div>
+                    <h3>Aprende Rapido</h3>
+                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                </div>
+                <div class='bx2'>
+                    <div class="iconborder">
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/xryjrepg.json" trigger="hover" colors="primary:#c71f16" style="width:100px;height:100px">
+                        </lord-icon>
+                    </div>
+                    <h3>Aprende Seguro</h3>
+                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                </div>
+                <div class='bx2'>
+                    <div class='iconborder'>
+                        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                        <lord-icon src="https://cdn.lordicon.com/jffauosv.json" trigger="hover" colors="primary:#121331" style="width:100px;height:100px">
+                        </lord-icon>
+                    </div>
+                    <h3>Aprende Inteligente</h3>
+                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- testimonios -->
+    <div class='background3'>
+        <div class='container'>
+            <div class='title3'>
+                <h2>Testimonios</h2>
+                <p>Aenean massa. Curabitur at lacus ac velit ornare lobortis. Maecenas malesuada. Nam at tortor in tellus interdum sagittis.</p>
+            </div>
+            <div class='bgbox3 slider'>
+                <div class='box3'>
+                    <div class='imgbx3'>
+                        <img src="images/persona3.jpeg" alt="">
+                    </div>
+                    <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                    <strong>Rosario Tijeras</strong>
+                </div>
+                <div class='box3'>
+                    <div class='imgbx3'>
+                        <img src="images/pwersona2.png" alt="">
+                    </div>
+                    <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                    <strong>David White</strong>
+                </div>
+                <div class='box3'>
+                    <div class='imgbx3'>
+                        <img src="images/person1.jpg" alt="">
+                    </div>
+                    <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                    <strong>Mike Queen</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".slider").slick({
+            dots: true,
+            infinite: false,
+            arrows: true,
+            slidesToShow: 4,
+            responsive: [{
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    infinite: true
+                }
+
+            }]
+        });
+    </script>
 </body>
 
 </html>
