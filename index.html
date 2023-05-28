@@ -71,21 +71,23 @@
         background-blend-mode: darken;
         background-attachment: fixed;
         background-color: #0000009e;
-        padding: 200px 0px 170px 0px;
+        /* padding: 170px 0px 100px; */
+        height: 750px;
         background-position: center;
     }
 
 
     .bgboxhero {
+        TEXT-ALIGN: CENTER;
         display: flex;
+        flex-direction: column;
         gap: 20px;
-        align-items: flex-start;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        height: 775px;
     }
 
     .boxhero {
-        width: 600px;
-        max-width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -95,12 +97,17 @@
         color: white;
         font-weight: bold;
         font-size: 75px;
+        width: 600PX;
+        max-width: 100%;
+        margin: auto;
     }
 
     .subtitlehero p {
+        width: 950px;
         margin: auto;
         color: white;
         font-size: 19px;
+        max-width: 100%;
     }
 
     .btnhero a {
@@ -109,12 +116,11 @@
         display: inline-block;
         font-size: 19px;
         background: #00bf62;
-        width: 335px;
-        text-align: center;
+        width: 325px;
         max-width: 100%;
         margin: auto;
         border-radius: 46px;
-        padding: 9px 0px;
+        padding: 10px 0px;
     }
 
     .btnhero a:hover {
@@ -123,6 +129,19 @@
         color: white;
     }
 
+    /* video */
+    .backgroundvideo {
+        background-color: black;
+        padding: 80px 0px;
+        text-align: center;
+    }
+
+    .titlevideo H2 {
+        color: white;
+        font-weight: bold;
+        font-size: 53px;
+        padding-bottom: 35px;
+    }
 
     /* benefits */
     .background2 {
@@ -193,12 +212,18 @@
         max-width: 100%;
     }
 
+    .background3 {
+        padding: 45px 0px;
+        background-image: url(images/backgroun3.png);
+    }
+
     .box3 {
         width: 381px;
         max-width: 100%;
         display: flex;
-        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        background-color: #fff;
+        color: white;
+        box-shadow: 0 3px 6px 0 rgb(255 255 255);
+        background-color: #0c0b0b00;
         padding: 90px 20px 20px 20px;
         position: relative;
         margin: auto;
@@ -211,7 +236,7 @@
         width: 499px;
         height: 5px;
         max-width: 100%;
-        background: #00bf62;
+        background: #ffffff;
         margin: auto;
     }
 
@@ -247,14 +272,47 @@
     .title3 {
         text-align: center;
         padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        color: white;
+    }
+
+    strong {
+        font-size: 24px;
     }
 
     .box3 span {
         font-weight: bold;
         font-size: 21px;
-        color: #000000;
+        color: #ffffff;
     }
 
+    /* footer */
+    .backgroundfooter {
+        padding: 45px 0px;
+    }
+
+    .bgfooter {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        align-items: center;
+    }
+
+    .iconfooter img {
+        width: 158px;
+    }
+
+    .socialmediafooter {
+        display: flex;
+        gap: 20px;
+    }
+
+    .socialmediafooter i {
+        color: black;
+        font-size: 33px;
+    }
 
     /* responsive */
     @media only screen and (max-width: 650px) {
@@ -304,9 +362,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela de Manejo FyK</title>
-</head>
 
-<body>
+
 
     <!-- Header -->
     <div class='header1'>
@@ -369,6 +426,11 @@
         </div>
     </div>
 
+</head>
+
+<body>
+
+
     <!-- hero -->
     <div class='backgroundhero'>
         <div class='container'>
@@ -378,19 +440,23 @@
                         <h1>Aprenda a Manejar con FyK</h1>
                     </div>
                     <div class='subtitlehero'>
-                        <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                        <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
                     </div>
                     <div class='btnhero'>
                         <a href="">Contactenos</a>
                     </div>
                 </div>
-                <div class='videohero1'>
-                    <iframe width="610" height="450" src="https://www.youtube.com/embed/bD_nlDO09f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
             </div>
         </div>
     </div>
-
+    <div class='backgroundvideo'>
+        <div class='container'>
+            <div class='titlevideo'>
+                <h2>Video FyK</h2>
+            </div>
+            <iframe width="750" height="500" src="https://www.youtube.com/embed/bD_nlDO09f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
     <!-- benefits -->
     <div class='background2'>
         <div class='container'>
@@ -444,7 +510,7 @@
                         <div class='imgbx3'>
                             <img src="images/persona3.jpeg" alt="">
                         </div>
-                        <p><strong></strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong></p>
                         <span>Rosario Tijeras</span>
                     </div>
                 </div>
@@ -453,7 +519,7 @@
                         <div class='imgbx3'>
                             <img src="images/pwersona2.png" alt="">
                         </div>
-                        <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong> </p>
                         <span>David White</span>
                     </div>
                 </div>
@@ -462,7 +528,7 @@
                         <div class='imgbx3'>
                             <img src="images/person1.jpg" alt="">
                         </div>
-                        <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique."</p>
+                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong></p>
                         <span>Mike Queen</span>
                     </div>
                 </div>
@@ -484,7 +550,7 @@
         $(".slider").slick({
             dots: true,
             infinite: true,
-            arrows: false,
+            arrows: true,
             slidesToShow: 3,
             autoplay: true,
             autoplaySpeed: 2000,
@@ -499,5 +565,25 @@
         });
     </script>
 </body>
+<footer>
+    <div class='backgroundfooter'>
+        <div class='container'>
+            <div class='bgfooter'>
+                <div class='iconfooter'>
+                    <img src="images/white-icon.png" alt="">
+                </div>
+                <div class='directionfooter'>
+                    <p>123 Main Street Anytown, CA 12345 United States</p>
+                </div>
+                <div class='socialmediafooter'>
+                    <a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://www.tiktok.com/@escuelademanejofy1"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </html>
