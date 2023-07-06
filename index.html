@@ -1,86 +1,9 @@
+<!DOCTYPE html>
+<html lang="es">
 <style>
-    /* General */
-    body {
-        font-family: 'Barlow', sans-serif !important;
-        position: relative;
-        overflow-x: hidden !important;
-        margin: 0px;
-    }
-
-    /* new-header */
-    nav.headermd {
-        background: black;
-        position: fixed;
-        Z-INDEX: 99999;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        margin: auto;
-        justify-content: space-around;
-        padding: 0px 90px;
-    }
-
-    .iconmage1 img {
-        width: 100px;
-        max-width: 100%;
-    }
-
-    .socialmedia1 li {
-        list-style-type: none;
-    }
-
-    ul.alinks {
-        display: flex;
-        gap: 70px;
-        margin: 0px;
-        padding: 0px;
-        list-style-type: none;
-    }
-
-    ul.alinks a {
-        color: white;
-        text-decoration: unset;
-        font-size: 18px;
-    }
-
-    .socialmedia1 {
-        display: flex;
-        gap: 23px;
-    }
-
-    .header-links {
-        display: flex;
-        gap: 50px;
-    }
-
-    .socialmedia1 i {
-        color: white;
-        font-size: 29px;
-    }
-
-    .iconmage1 {
-        width: 600px;
-        max-width: 100%;
-    }
-
-    .burger div {
-        width: 25px;
-        height: 2px;
-        background-color: white;
-        margin: 5px;
-        transition: all 0.3s ease;
-    }
-
-    .burger {
-        display: none;
-        cursor: pointer;
-    }
-
-
-
     /* hero */
     .backgroundhero {
-        background: url(images/instructor1.jpg);
+        background: url(images/home/instructor1.jpg);
         background-size: cover;
         background-blend-mode: darken;
         background-attachment: fixed;
@@ -89,7 +12,6 @@
         height: 750px;
         background-position: center;
     }
-
 
     .bgboxhero {
         TEXT-ALIGN: CENTER;
@@ -152,7 +74,7 @@
     .backgroundvideo {
         padding: 80px 0px;
         text-align: center;
-        background-image: url(images/backgroun3.png);
+        background-image: url(images/home/backgroun3.png);
     }
 
     .titlevideo H2 {
@@ -184,7 +106,7 @@
     }
 
     .title2 p {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     .bgbox2 {
@@ -195,7 +117,7 @@
     }
 
     .bx2 {
-        width: 300px;
+        width: 420px;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -204,6 +126,7 @@
 
     .bx2 p {
         text-align: center;
+        font-size: 17px;
     }
 
     .bx2 img {
@@ -244,7 +167,7 @@
 
     .background3 {
         padding: 45px 0px;
-        background-image: url(images/backgroun3.png);
+        background-image: url(images/home/backgroun3.png);
     }
 
     .box3 {
@@ -253,10 +176,12 @@
         display: flex;
         color: white;
         box-shadow: 0 3px 6px 0 rgb(255 255 255);
+        min-height: 411px;
         background-color: #0c0b0b00;
         padding: 90px 20px 20px 20px;
         position: relative;
         margin: auto;
+        justify-content: space-around;
         text-align: center;
         flex-direction: column;
         gap: 12px;
@@ -291,7 +216,11 @@
     }
 
     .title3 p {
-        font-size: 18px;
+        font-size: 19px;
+    }
+
+    .bgbox3 p {
+        font-size: 17px;
     }
 
     .slick-slide {
@@ -342,19 +271,6 @@
     .socialmediafooter i {
         color: black;
         font-size: 33px;
-    }
-
-
-
-    /* WHATSAPP */
-    .whatsbuttom {
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-    }
-
-    .whatsbuttom img {
-        width: 84px;
     }
 
 
@@ -451,71 +367,9 @@
 
 
 
-    /* responsive */
-    @media only screen and (max-width: 1695px) {
-
-        /* header-responsive */
-        .iconmage1 {
-            width: unset;
-        }
-
-        nav.headermd {
-            padding: 0px 20px;
-        }
-
-        .bgbox2 {
-            justify-content: center;
-        }
-    }
 
 
     @media only screen and (max-width: 991px) {
-
-        /* header-responsive */
-        nav.headermd {
-            justify-content: space-between;
-        }
-
-        .iconmage1 img {
-            width: 75PX;
-        }
-
-        .burger {
-            display: block;
-        }
-
-        .line1 {
-            width: 80%;
-            height: 2px;
-            background: white;
-            margin: 0px auto;
-        }
-
-        ul.alinks {
-            flex-direction: column;
-            padding: 0px;
-            gap: 25px;
-        }
-
-        .header-links {
-            position: absolute;
-            top: 74px;
-            align-items: center;
-            padding: 30px 0px;
-            display: flex;
-            width: 50%;
-            right: 0;
-            background-color: black;
-            height: 95vh;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .header-links li {
-            opacity: 0;
-        }
 
         /* titles */
         .title1 h1 {
@@ -534,15 +388,6 @@
             font-size: 44px;
         }
 
-        /* whatsapp */
-        .whatsbuttom img {
-            width: 60px;
-        }
-
-        .whatsbuttom {
-            bottom: 15px;
-            right: 15px;
-        }
 
         /* gallery */
         .grid {
@@ -552,59 +397,51 @@
             top: 0 !important;
         }
     }
-
-
-    /* header-animation */
-    .header-active {
-        transform: translateX(0%);
-    }
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-    }
-
-    .toggle .line1 {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .toggle .line2 {
-        opacity: 0;
-    }
-
-    .toggle .line3 {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
 </style>
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
+    <!-- css header y footer-->
+    <link rel="stylesheet" type="text/css" href="headeryfooter.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/header/black-icon.png" type="image/x-icon">
+
+    <!-- meta -->
+    <meta name="description"
+        content="¿Buscas una escuela de manejo confiable en Costa Rica? En la Escuela de Manejo FyK, ofrecemos una educación integral y personalizada para convertirte en un conductor seguro y experimentado. Nuestro equipo de instructores altamente capacitados te guiará a través de lecciones teóricas y prácticas, brindándote las habilidades necesarias para enfrentar cualquier desafío en las carreteras costarricenses. Ya sea que estés aprendiendo a conducir desde cero o deseas mejorar tus habilidades existentes, en Escuela de Manejo FyK encontrarás un ambiente acogedor y propicio para tu éxito. ¡Asegura tu futuro en las vías con la Escuela de Manejo FyK en Costa Rica!">
+
+    <meta property="og:image" content="https://escuelademanejofyk.com/images/header/black-icon.png">
+    <meta name="twitter:card" content="https://escuelademanejofyk.com/images/header/black-icon.png">
+    <meta name="twitter:image" content="https://escuelademanejofyk.com/images/header/black-icon.png">
+    <meta property="og:title" content="Escuela de Manejo FyK Costa Rica">
+    <meta property="og:description"
+        content="¿Buscas una escuela de manejo confiable en Costa Rica? En la Escuela de Manejo FyK, ofrecemos una educación integral y personalizada para convertirte en un conductor seguro y experimentado. Nuestro equipo de instructores altamente capacitados te guiará a través de lecciones teóricas y prácticas, brindándote las habilidades necesarias para enfrentar cualquier desafío en las carreteras costarricenses. Ya sea que estés aprendiendo a conducir desde cero o deseas mejorar tus habilidades existentes, en Escuela de Manejo FyK encontrarás un ambiente acogedor y propicio para tu éxito. ¡Asegura tu futuro en las vías con la Escuela de Manejo FyK en Costa Rica!">
+    <meta property="og:url" content="https://escuelademanejofyk.com/">
+
     <!-- slick -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- font-family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- javascript -->
-    <script src="javascriptcode.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/388554b322.js" crossorigin="anonymous"></script>
 
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- HTML -->
     <meta charset="UTF-8">
@@ -615,33 +452,36 @@
     <!-- Header -->
     <nav class="headermd">
         <div class="iconmage1">
-            <a href="">
-                <img src="images/black-icon.png" alt="">
+            <a href="https://escuelademanejofyk.com/">
+                <img src="images/header/black-icon.png" alt="">
             </a>
         </div>
         <div class='header-links'>
             <ul class="alinks">
                 <li>
-                    <a href="">Inicio</a>
+                    <a href="https://escuelademanejofyk.com/">Inicio</a>
                 </li>
                 <li>
-                    <a href="">Quienes Somos?</a>
+                    <a href="quienes-somos">¿Quienes Somos?</a>
                 </li>
                 <li>
-                    <a href="">Servicios</a>
+                    <a href="servicios">Servicios</a>
                 </li>
                 <li>
-                    <a href="">Contactenos</a>
+                    <a href="contactenos">Contactenos</a>
                 </li>
                 <li>
-                    <a href="">Galeria</a>
+                    <a href="galeria">Galeria</a>
                 </li>
             </ul>
             <div class='line1'></div>
             <div class='socialmedia1'>
-                <li><a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
-                <li><a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                <li><a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></a></li>
+                <li><a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i
+                            class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
             </div>
         </div>
         <div class='burger'>
@@ -675,7 +515,29 @@
         }
         navSlide();
     </script>
+    <div class='announcment1'>
+        <div class='container'>
+            <div class='bgboxano1'>
+                <h1>Curso De Vacaciones de 15 dias 2x1</h1>
+                <div class='btnox'>
+                    <a target="_blank"
+                        href="http://wa.me/50689507788?text=Quiero%20adquirir%20la%20promoción%202x1%20por%20el%20curso%20de%20verano%20de%2015%20días.%20El%20código%20promocional%20es%3A%20FYKPROMOS15">Adquieralo
+                        YA</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LL4ZX8V85"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9LL4ZX8V85');
+</script>
 
 <body>
     <!-- hero -->
@@ -687,10 +549,14 @@
                         <h1>Aprenda a Manejar con FyK</h1>
                     </div>
                     <div class='subtitlehero'>
-                        <p>Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                        <p>¡Aprende a manejar y obtén tu licencia con nuestra escuela experta! Clases personalizadas y
+                            profesores certificados.
+                            Regístrate hoy para iniciar tu camino seguro al volante. Descubre por qué somos la elección
+                            número uno en educación
+                            vial.</p>
                     </div>
                     <div class='btnhero'>
-                        <a href="">Contactenos</a>
+                        <a href="/contactenos">Contactenos</a>
                     </div>
                 </div>
             </div>
@@ -699,7 +565,11 @@
     <div class='backgroundvideo'>
         <div class='container'>
             <div class='bxvideo'>
-                <iframe width="750" height="500" src="https://www.youtube.com/embed/bD_nlDO09f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="750" height="500" src="https://www.youtube.com/embed/qnJVW4IPXCs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
@@ -708,35 +578,58 @@
         <div class='container'>
             <div class='title2'>
                 <h2>Beneficios de Aprender a Manejar con FyK</h2>
-                <p>Cras sagittis. Nullam dictum felis eu pede mollis pretium.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                <p>Domina el volante y disfruta de una libertad sin límites. Descubre los beneficios exclusivos de
+                    aprender a manejar con
+                    FyK, la escuela de manejo de confianza. Aumenta tu seguridad, confianza y destreza en la carretera
+                    con nuestros
+                    programas de enseñanza de última generación.</p>
             </div>
             <div class='bgbox2'>
                 <div class='bx2'>
                     <div class="iconborder">
                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/hnvrjtda.json" trigger="hover" colors="primary:#00bf62" style="width:100px;height:100px">
+                        <lord-icon src="https://cdn.lordicon.com/hnvrjtda.json" trigger="hover" colors="primary:#00bf62"
+                            style="width:100px;height:100px">
                         </lord-icon>
                     </div>
-                    <h3>Aprende Rapido</h3>
-                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                    <h3>Rapido</h3>
+                    <p>Aprende a manejar rápidamente con nuestra escuela de manejo de primer nivel. Nuestro enfoque
+                        eficiente y personalizado
+                        te permite adquirir las habilidades necesarias en tiempo récord. Obtén tu licencia de conducir
+                        en poco tiempo y disfruta
+                        de la libertad en la carretera. ¡Únete a nosotros y acelera tu camino hacia la conducción
+                        independiente!</p>
                 </div>
                 <div class='bx2'>
                     <div class="iconborder">
                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/xryjrepg.json" trigger="hover" colors="primary:#c71f16" style="width:100px;height:100px">
+                        <lord-icon src="https://cdn.lordicon.com/xryjrepg.json" trigger="hover" colors="primary:#c71f16"
+                            style="width:100px;height:100px">
                         </lord-icon>
                     </div>
-                    <h3>Aprende Seguro</h3>
-                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                    <h3>Seguro</h3>
+                    <p>Aprende a manejar de manera segura con nuestra escuela líder. Nuestro enfoque se centra en la
+                        seguridad vial y en
+                        brindarte las habilidades necesarias para ser un conductor responsable. Aprenderás normas de
+                        tránsito y técnicas de
+                        conducción defensiva. Prepárate para enfrentar cualquier situación en la carretera con
+                        confianza. ¡Únete a nosotros y
+                        comienza tu viaje seguro hacia la conducción!</p>
                 </div>
                 <div class='bx2'>
                     <div class='iconborder'>
                         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                        <lord-icon src="https://cdn.lordicon.com/jffauosv.json" trigger="hover" colors="primary:#121331" style="width:100px;height:100px">
+                        <lord-icon src="https://cdn.lordicon.com/jffauosv.json" trigger="hover" colors="primary:#121331"
+                            style="width:100px;height:100px">
                         </lord-icon>
                     </div>
-                    <h3>Aprende Inteligente</h3>
-                    <p>ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id purus. Maecenas malesuada. In ut quam vitae odio lacinia tincidunt.</p>
+                    <h3>Accesibilidad</h3>
+                    <p>Nuestra escuela de manejo está presente en las 13 sedes del COSEVI, brindándote cercanía sin
+                        importar tu ubicación.
+                        Ofrecemos un servicio conveniente y personalizado, con instructores que pueden llegar hasta tu
+                        puerta. Aprender a
+                        manejar nunca ha sido tan accesible y cómodo. ¡Únete a nosotros y comienza tu aprendizaje sin
+                        complicaciones!</p>
                 </div>
             </div>
         </div>
@@ -745,53 +638,76 @@
     <div class='background3'>
         <div class='container'>
             <div class='title3'>
-                <h2>Testimonios</h2>
+                <h2>Testimonios de nuestros clientes</h2>
                 <div class='line3'></div>
-                <p>Aenean massa. Curabitur at lacus ac velit ornare lobortis. Maecenas malesuada. Nam at tortor in tellus interdum sagittis.</p>
+                <p>Descubre lo que dicen nuestros clientes satisfechos sobre su experiencia en la escuela de manejo FyK.
+                    Únete a nosotros y
+                    sé parte de nuestra comunidad de conductores exitosos.</p>
             </div>
             <div class='bgbox3 slider'>
                 <div class=''>
                     <div class='box3'>
                         <div class='imgbx3'>
-                            <img src="images/persona3.jpeg" alt="">
+                            <img src="images/home/images.png" alt="">
                         </div>
-                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong></p>
-                        <span>Rosario Tijeras</span>
+                        <p><strong>"</strong>Realicé mi prueba en San José y recibí un excelente servicio por parte de
+                            FyK. El trato que recibí fue excepcional y
+                            gracias a su ayuda, ahora tengo mi licencia en mis manos. ¡Muchas bendiciones para todo el
+                            equipo de FyK<strong>"</strong></p>
+                        <span>Manuel Acevedo Castro</span>
                     </div>
                 </div>
                 <div class=''>
                     <div class='box3'>
                         <div class='imgbx3'>
-                            <img src="images/pwersona2.png" alt="">
+                            <img src="images/home/images.png" alt="">
                         </div>
-                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong> </p>
-                        <span>David White</span>
+                        <p><strong>"</strong>Gracias a Dios y a FYK, ahora tengo mi licencia en mis manos. Estoy
+                            realmente agradecido por la eficiencia y
+                            profesionalismo de Don Mauricio, uno de los mejores profesores que he tenido. ¡Recomiendo
+                            ampliamente a FYK por su
+                            excelente servicio y enseñanza de calidad!<strong>"</strong> </p>
+                        <span>Karla Vargas Carvajal</span>
                     </div>
                 </div>
                 <div class=''>
                     <div class='box3'>
                         <div class='imgbx3'>
-                            <img src="images/person1.jpg" alt="">
+                            <img src="images/home/images.png" alt="">
                         </div>
-                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong></p>
-                        <span>Mike Queen</span>
+                        <p><strong>"</strong>Mi experiencia en Fyk ha sido excepcional. El instructor Mauricio fue
+                            paciente y dedicado, brindándome las herramientas
+                            para ser una conductora segura. Superé mis miedos y adquirí habilidades para enfrentar
+                            cualquier situación en la
+                            carretera. Recomiendo Fyk para aprender a conducir con seguridad y eficiencia. ¡Gracias,
+                            Fyk, por ayudarme a obtener mi
+                            licencia con éxito!<strong>"</strong></p>
+                        <span>Camila Jimenez Gutierrez</span>
                     </div>
                 </div>
                 <div class=''>
                     <div class='box3'>
                         <div class='imgbx3'>
-                            <img src="images/person1.jpg" alt="">
+                            <img src="images/home/images.png" alt="">
                         </div>
-                        <p><strong>"</strong> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Sed cursus turpis vitae tortor. Nullam accumsan lorem in dui.Maecenas nec odio et ante tincidunt tempus. Fusce convallis metus id felis luctus adipiscing. Curabitur a felis in nunc fringilla tristique.<strong>"</strong> </p>
-                        <span>Mike Queen</span>
+                        <p><strong>"</strong>Recomiendo totalmente la escuela de manejo FyK. Mi experiencia con ellos
+                            fue increíble. El instructor Mauricio fue
+                            excepcional en su paciencia y dedicación. Gracias a su enseñanza, ahora me siento segura y
+                            confiada al volante.
+                            ¡Gracias, FyK, por ayudarme a obtener mi licencia de conducir con éxito!<strong>"</strong>
+                        </p>
+                        <span>María Pérez</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(".slider").slick({
             dots: true,
@@ -821,33 +737,33 @@
             </div>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230502_102710 (1).jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230502_102710 (1).jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230228_154942.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230228_154942.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230206_173104.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230206_173104.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230209_172450.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230209_172450.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230524_074430.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230524_074430.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230228_160922.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230228_160922.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230502_105659 (1).jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230502_105659 (1).jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
                 <div class="grid-item">
-                    <img src="images/gallery/IMG_20230523_115659.jpg" alt="Image" onclick="enlargeImage(this)">
+                    <img src="images/Gallery/IMG_20230523_115659.jpg" alt="Image" onclick="enlargeImage(this)">
                 </div>
             </div>
             <div id="overlay"></div>
             <div class='btngallery'>
-                <a href="">Ver mas</a>
+                <a href="/galeria">Ver mas</a>
             </div>
         </div>
     </div>
@@ -895,7 +811,7 @@
 
     <div class='whatsbuttom'>
         <a target=”_blank” href="http://wa.me/50689507788">
-            <img src="images/WhatsApp_icon.png" alt="">
+            <img src="images/whatsapp.png" alt="">
         </a>
     </div>
 </body>
@@ -904,21 +820,24 @@
         <div class='container'>
             <div class='bgfooter'>
                 <div class='iconfooter'>
-                    <img src="images/white-icon.png" alt="">
+                    <img src="images/header/white-icon.png" alt="">
                 </div>
                 <div class='directionfooter'>
-                    <p>123 Main Street Anytown, CA 12345 United States</p>
+                    <p>Daniel Flores, Perez Zeledon San José Costa Rica</p>
                 </div>
                 <div class='socialmediafooter'>
-                    <a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-                    <a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                    <a target=”_blank” href="https://www.tiktok.com/@escuelademanejofy1"><i class="fa-brands fa-tiktok"></i></a>
+                    <a target=”_blank” href="http://wa.me/50689507788"><i class="fa fa-whatsapp"
+                            aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://instagram.com/escuelademanejofyk2?igshid=NGExMmI2YTkyZg== "><i
+                            class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://www.facebook.com/Puravidaescuelademanejo?mibextid=ZbWKwL"><i
+                            class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a target=”_blank” href="https://www.tiktok.com/@escuelademanejofy1"><i
+                            class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
 
 </html>
