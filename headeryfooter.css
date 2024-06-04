@@ -6,6 +6,7 @@
     body {
         margin-top: 100px !important;
     }
+
     body {
         font-family: 'Barlow', sans-serif !important;
         position: relative;
@@ -110,18 +111,27 @@
 
     /* Promocion */
     .announcment1 {
-        background-color: #00bf62;
         padding: 20px 0px;
         text-align: center;
+        background-image: url('images/bgchristmas.jpg');
+        background-blend-mode: darken;
+        background-size: contain;
+        background-color: #00000085;
     }
+
     .bgboxano1 h1 {
         color: white;
+        font-size: 23px;
     }
-        .bgboxano1 {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
+
+    .bgboxano1 {
+        display: flex;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        gap: 20px;
+    }
+
     .btnox a {
         color: white;
         text-decoration: unset;
@@ -220,6 +230,26 @@
         .whatsbuttom {
             bottom: 15px;
             right: 15px;
+        }
+
+        body {
+            margin-top: unset !important;
+        }
+
+        nav.headermd {
+            margin-top: unset !important;
+        }
+
+        .announcment1 {
+            padding-top: 100px;
+        }
+
+        .bgboxano1 {
+            flex-wrap: wrap;
+        }
+        
+        .bgboxano1 {
+            flex-direction: column;
         }
     }
 

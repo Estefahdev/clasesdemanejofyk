@@ -137,14 +137,14 @@
 
     .btnbox-1 {
         display: flex;
-        gap: 5px;
-        align-items: center;
+        align-items: baseline;
+        GAP: 10PX;
+        FLEX-DIRECTION: COLUMN;
     }
 
     /* section-2 */
     .background-2 {
         background-color: #000000;
-        margin-top: 75px;
         position: relative;
     }
 
@@ -281,7 +281,33 @@
 
 
 
+    .background-2.reverse .sec2 {
+        flex-direction: row-reverse;
+    }
+
+    .background-2.reverse .bgx2 p {
+        color: black !important;
+    }
+
+    .background-2.reverse .sec2 h2 {
+        color: #000;
+    }
+
+    .background-2.reverse {
+        background: #bfe9d4;
+    }
+
+    .background-2.reverse .bgx2 {
+        color: black;
+        max-width: 100%;
+    }
+
     /* FAQ SECTION */
+    .faq ul {
+        color: white;
+        font-size: 21px;
+    }
+
     .faqtitle h2 {
         color: #fff;
         font-size: 45px;
@@ -306,6 +332,7 @@
 
     .faq h3 {
         color: white;
+        font-size: 25px;
     }
 
     .question {
@@ -433,6 +460,9 @@
                     <a href="servicios">Servicios</a>
                 </li>
                 <li>
+                    <a href="alquileres">Alquileres</a>
+                </li>
+                <li>
                     <a href="contactenos">Contactenos</a>
                 </li>
                 <li>
@@ -477,17 +507,6 @@
         }
         navSlide();
     </script>
-    <div class='announcment1'>
-        <div class='container'>
-            <div class='bgboxano1'>
-                <h1>Curso De Vacaciones de 15 dias 2x1</h1>
-                <div class='btnox'>
-                    <a target="_blank" href="http://wa.me/50689507788?text=Quiero%20adquirir%20la%20promoción%202x1%20por%20el%20curso%20de%20verano%20de%2015%20días.%20El%20código%20promocional%20es%3A%20FYKPROMOS15">Adquieralo YA</a>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LL4ZX8V85"></script>
@@ -503,11 +522,10 @@
 </script>
 
 <body>
-
     <div class="background-1">
         <div class="section-1 container">
             <div class="title-1">
-                <h1>Paquetes de Conducción</h1>
+                <h1>Paquetes de Conducción Practico</h1>
             </div>
             <div class="bgbox1">
                 <div class="box-1 premium1">
@@ -519,19 +537,27 @@
                         <h4>18 horas</h4>
                     </div>
                     <div class="txt-1">
-                        <p>Curso de 18 horas dividido en lecciones de dos o tres horas, las primeras en carro manual y las últimas para la preparación de la prueba en transmisión automática. También puedes optar por realizar todo el curso en vehículo automático.</p>
+                        <p>Curso de 18 horas dividido en lecciones de dos o tres horas, las primeras en carro manual y
+                            las últimas para la preparación de la prueba en transmisión automática. También puedes optar
+                            por realizar todo el curso en vehículo automático.</p>
                     </div>
                     <div class="check-1">
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Servicio de recogida a la puerta de tu casa para mayor comodidad.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Alquiler de vehículo para tu cita práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las maniobras de frente y reversa.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Servicio de recogida a la puerta de
+                                tu casa para mayor comodidad.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Alquiler de vehículo para tu cita
+                                práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las
+                                maniobras de frente y reversa.</span>
                         </div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes escenarios de conducción.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del
+                                COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes
+                                escenarios de conducción.</span>
                         </div>
                     </div>
                     <div class="btnbox-1">
                         <div class="btn-1">
-                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20premium%20de%2018%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar Paquete</a>
+                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20premium%20de%2018%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar
+                                Paquete</a>
                         </div>
                         <span></span>
                     </div>
@@ -546,20 +572,27 @@
                     </div>
                     <div class="txt-1">
                         <p>
-                            15 horas de clases de manejo en sesiones de 2 horas. Instructores altamente capacitados para una conducción segura y confiada.
+                            15 horas de clases de manejo en sesiones de 2 horas. Instructores altamente capacitados para
+                            una conducción segura y confiada.
                         </p>
                     </div>
                     <div class="check-1">
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Servicio de recogida a la puerta de tu casa para mayor comodidad.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Alquiler de vehículo para tu cita práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las maniobras de frente y reversa.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Servicio de recogida a la puerta de
+                                tu casa para mayor comodidad.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Alquiler de vehículo para tu cita
+                                práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las
+                                maniobras de frente y reversa.</span>
                         </div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes escenarios de conducción.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del
+                                COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes
+                                escenarios de conducción.</span>
                         </div>
                     </div>
                     <div class="btnbox-1">
                         <div class="btn-1">
-                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20Pro%20de%2015%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar Paquete</a>
+                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20Pro%20de%2015%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar
+                                Paquete</a>
                         </div>
                         <span></span>
                     </div>
@@ -573,20 +606,27 @@
                         <h4>10 horas</h4>
                     </div>
                     <div class="txt-1">
-                        <p>Curso de manejo de 10 horas para aprender las bases esenciales de la conducción de manera segura y confiada.
+                        <p>Curso de manejo de 10 horas para aprender las bases esenciales de la conducción de manera
+                            segura y confiada.
                         </p>
                     </div>
                     <div class="check-1">
-                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Servicio de recogida a la puerta de tu casa para mayor comodidad.</span></div>
-                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Alquiler de vehículo para tu cita práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las maniobras de frente y reversa.</span>
+                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Servicio de recogida a la puerta de tu casa para
+                                mayor comodidad.</span></div>
+                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Alquiler de vehículo para tu cita práctica, sin
+                                necesidad de preocuparte por conseguir uno.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las
+                                maniobras de frente y reversa.</span>
                         </div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes escenarios de conducción.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del
+                                COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes
+                                escenarios de conducción.</span>
                         </div>
                     </div>
                     <div class="btnbox-1">
                         <div class="btn-1">
-                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20lite%20de%2010%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar Paquete</a>
+                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20lite%20de%2010%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar
+                                Paquete</a>
                         </div>
                         <span></span>
                     </div>
@@ -600,23 +640,145 @@
                         <h4> 8 horas</h4>
                     </div>
                     <div class="txt-1">
-                        <p>Curso de manejo de 8 horas para adquirir las habilidades esenciales y fundamentos de la conducción de manera efectiva.</p>
+                        <p>Curso de manejo de 8 horas para adquirir las habilidades esenciales y fundamentos de la
+                            conducción de manera efectiva.</p>
                     </div>
                     <div class="check-1">
-                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Servicio de recogida a la puerta de tu casa para mayor comodidad.</span></div>
-                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i></i><span style="text-decoration:line-through;">Alquiler de vehículo para tu cita práctica, sin necesidad de preocuparte por conseguir uno.</span></div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las maniobras de frente y reversa.</span>
+                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i><span style="text-decoration:line-through;">Servicio de recogida a la puerta de tu casa para
+                                mayor comodidad.</span></div>
+                        <div class=""><i class="fa fa-times-circle" aria-hidden="true"></i></i><span style="text-decoration:line-through;">Alquiler de vehículo para tu cita práctica, sin
+                                necesidad de preocuparte por conseguir uno.</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Prácticas de conos para dominar las
+                                maniobras de frente y reversa.</span>
                         </div>
-                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes escenarios de conducción.</span>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Recorrido práctico por las zonas del
+                                COSEVI, avenidas, pistas y rotondas, entre otros, para familiarizarte con diferentes
+                                escenarios de conducción.</span>
                         </div>
                     </div>
                     <div class="btnbox-1">
                         <div class="btn-1">
-                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20Basico%20de%208%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar Paquete</a>
+                            <a href="http://wa.me/50689507788?text=%F0%9F%91%8B%20¡Hola!%20Estoy%20interesado%20en%20el%20paquete%20Basico%20de%208%20horas.%20¿Podrían%20brindarme%20más%20detalles%20y%20los%20requisitos%20para%20comenzar?%20¡Gracias%21">Solicitar
+                                Paquete</a>
                         </div>
                         <span></span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-1">
+        <div class="section-1 container">
+            <div class="title-1">
+                <h1>Paquetes de Conducción Teorico</h1>
+            </div>
+            <div class="bgbox1">
+                <div class="box-1 premium1">
+                    <div class="img-1">
+                        <img src="/images/Group-54.png" alt="">
+                    </div>
+                    <div class="subtitle-1">
+                        <h3>Curso Teorico Virtual</h3>
+                        <h4></h4>
+                    </div>
+                    <div class="txt-1">
+                        <p>Aprende desde la comodidad de tu hogar y adquiere los conocimientos fundamentales necesarios
+                            para ser un conductor
+                            seguro y confiado! Nuestros instructores expertos te guiarán a través de sesiones
+                            interactivas en línea, donde podrás
+                            familiarizarte con las reglas de tránsito, señales viales, técnicas de conducción defensiva
+                            y mucho más.</p>
+                    </div>
+                    <div class="check-1">
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>se impartira el ultimo lunes de cada
+                                mes de 6 de la tarde a 10 de la noche</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Via zoom</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Duracion 4 horas</span>
+                        </div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Manual de estudio</span>
+                        </div>
+                    </div>
+                    <div class="btnbox-1">
+                        <div class="btn-1">
+                            <a href="http://wa.me/50689507788?text=Deseo%20adquirir%20el%20curso%20de%20conducir%20Te%C3%B3rico%20Virtual.%20%C2%BFPuedes%20brindarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F">Solicitar
+                                Paquete</a>
+                        </div>
+                        <span>20000 Colones</span>
+                    </div>
+                </div>
+                <div class="box-1 pro1">
+                    <div class="img-1">
+                        <img src="/images/Group-19.png" alt="">
+                    </div>
+                    <div class="subtitle-1">
+                        <h3>Curso Teorico Presencial</h3>
+                        <h4></h4>
+                    </div>
+                    <div class="txt-1">
+                        <p>
+                            Aprende de manera presencial y directa en nuestro curso teórico. Adquiere los conocimientos
+                            fundamentales para ser un
+                            conductor seguro y responsable. ¡Únete a nosotros y comienza tu viaje hacia una conducción
+                            consciente!
+                        </p>
+                    </div>
+                    <div class="check-1">
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>MATERIAL PARA EL CURSO</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Videos de las clases grabadas por
+                                capitulos</span></div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Servicio de tutoria via WhatsApp
+                                para atencion de dudas y preguntas</span>
+                        </div>
+                        <div class=""><i class="fa-solid fa-circle-check"></i><span>Audiolibro del manual del conductor
+                                version 2023</span>
+                        </div>
+                    </div>
+                    <div class="btnbox-1">
+                        <div class="btn-1">
+                            <a href="http://wa.me/50689507788?text=Deseo%20adquirir%20el%20curso%20de%20conducir%20Te%C3%B3rico%20Presencial.%20%C2%BFPuedes%20brindarme%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor%3F">Solicitar
+                                Paquete</a>
+
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-2 reverse">
+        <img class="img22" src="/images/Screen-Shot-2022-04-24-at-21.11.52_ccexpress.png" alt="">
+        <div class="section-2 container">
+            <div class="sec2">
+                <div class='bgx2'>
+                    <h2>Paquetes de motos</h2>
+                    <p>
+                        Las primeras clases son en moto manual y las últimas se centran en la preparación para la prueba en moto automática.
+                        O
+                        puedes optar por hacer todo el curso en moto automática.
+                        <br><br>
+                        En las últimas lecciones, nos enfocamos en los requisitos de la prueba. El día del examen, te proporcionamos la moto
+                        y
+                        el acompañamiento del instructor.
+                        <br><br>
+                        El pago del curso se puede dividir en dos partes: la primera mitad al inicio y la segunda mitad a la mitad del
+                        curso.
+                        Queremos brindarte flexibilidad y un proceso de pago conveniente mientras te preparamos para una experiencia de
+                        conducción exitosa.
+                    </p>
+                    <ol>
+                        <li>curso de 18 horas</li>
+                        <li>curso de 15 horas:</li>
+                        <li>curso de 10 horas:</li>
+                        <li>curso de 8 horas:</li>
+                        <li>curso de 4 horas:</li>
+                        <li>curso de 3 horas:</li>
+                    </ol>
+
+                    <div class="btn2">
+                        <a href="/contactenos">Contactenos</a>
+                    </div>
+                </div>
+                <img src="images/servicios/motofoto.jpg" alt="">
             </div>
         </div>
     </div>
@@ -640,7 +802,7 @@
                         <a href="/contactenos">Contactenos</a>
                     </div>
                 </div>
-                <img src="images/servicios/girl-with-license.jpg" alt="">
+                <img src="images/servicios/carhero.jpg" alt="">
             </div>
         </div>
     </div>
@@ -668,21 +830,60 @@
             </div>
             <div class="faq-section">
                 <div class="faq">
-                    <h3 class="question">Question 1 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">¿Dónde puedo matricular una prueba teórica o práctica?<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 1</p>
+                        <p>Para matricular el examen práctico y teórico, se requiere pagar el costo de la matrícula.
+                            Puedes realizar este pago a
+                            través de cualquier aplicación bancaria o directamente en la sucursal del banco. El costo de
+                            la matrícula es de 5000
+                            colones. Una vez realizado el pago, deberás ingresar al siguiente enlace: <a href="https://servicios.educacionvial.go.cr/">https://servicios.educacionvial.go.cr/</a>
+                            para
+                            completar la matrícula y seleccionar la fecha de tu prueba práctica o teórica.</p>
                     </div>
                 </div>
                 <div class="faq">
-                    <h3 class="question">Question 2 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">¿Cuánto tiempo me lleva estar preparado para hacer el examen de manejo?<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 2</p>
+                        <p>El tiempo que tome para que cada persona alcance un nivel óptimo para la prueba de manejo
+                            dependerá de su experiencia
+                            previa y de sus fortalezas y debilidades individuales al conducir. Nuestros instructores
+                            realizarán una evaluación
+                            inicial para determinar tu nivel actual y identificar las áreas que necesitan ser mejoradas
+                            y fortalecidas. A partir de
+                            ahí, se creará un plan de enseñanza personalizado para ayudarte a desarrollar las
+                            habilidades necesarias y alcanzar un
+                            nivel óptimo para aprobar la prueba de manejo. Trabajaremos contigo de manera individual
+                            para garantizar un progreso
+                            efectivo y una preparación adecuada.</p>
                     </div>
                 </div>
                 <div class="faq">
-                    <h3 class="question">Question 3 <i class="fas fa-chevron-down"></i></h3>
+                    <h3 class="question">¿Dónde se encuentran ubicados?<i class="fas fa-chevron-down"></i></h3>
                     <div class="answer">
-                        <p>Answer 3</p>
+                        <p>¡Nos complace ofrecer nuestros servicios en Daniel Flores, Pérez Zeledón, San José, Costa
+                            Rica! Nuestra ubicación
+                            central nos permite brindar atención en esta área, pero eso no es todo. También extendemos
+                            nuestros servicios a las 13
+                            sedes a nivel nacional, por lo que sin importar dónde te encuentres en Costa Rica, ¡estamos
+                            listos para ayudarte!
+                            Además, entendemos la importancia de la comodidad para nuestros estudiantes, por lo que, si
+                            es necesario, nuestros
+                            instructores pueden llegar directamente a tu domicilio. Estamos comprometidos en brindarte
+                            un servicio completo y
+                            accesible para que puedas aprender a conducir de manera conveniente. ¡Únete a nosotros y
+                            comienza tu viaje hacia la
+                            conducción independiente!</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <h3 class="question">¿Cuáles son los métodos de pago aceptados?<i class="fas fa-chevron-down"></i></h3>
+                    <div class="answer">
+                        <ul>
+                            <li>Tarjeta de crédito o débito</li>
+                            <li>Efectivo</li>
+                            <li>SINPE Movil</li>
+                            <li>Transferencia bancaria</li>
+                        </ul>
                     </div>
                 </div>
             </div>

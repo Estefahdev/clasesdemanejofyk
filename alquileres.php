@@ -1,86 +1,13 @@
 <style>
     .background1 {
-        background-image: url(images/contactenos/quienes-somos.jpg);
-        BACKGROUND-COLOR: #00000080;
-        background-blend-mode: darken;
-        color: white;
-        background-position: top;
-        padding: 60px 0px;
-        background-size: cover;
-        background-attachment: fixed;
+        padding: 50px 0px;
     }
 
-    .bgbox1 {
-        display: flex;
-        gap: 60px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .txt1 h1 {
-        color: white;
-        font-weight: bold;
-        font-size: 75px;
-        width: 600PX;
-        max-width: 100%;
-    }
-
-    .txt1 p {
-        font-size: 19px;
-    }
-
-    .txt1 {
-        width: 550px;
-        max-width: 100%;
-    }
-
-    .form1 {
-        background: white;
-        padding: 30px 20px;
-        border-radius: 20px;
-        width: 484px;
-        max-width: 100%;
-    }
-
-
-    /* section-2 */
-    .background2 {
-        padding: 60px 0px;
-        background: #ebebeb;
-    }
-
-    .bgbox2 {
+    .title1 h1 {
         text-align: center;
-    }
-
-    .bgbox2 h2 {
-        padding-bottom: 45px;
         font-weight: bold;
-        font-size: 53px;
-        margin: auto;
-        width: 723px;
-        max-width: 100%;
-    }
-
-    .iframe1 {
-        margin: auto;
-    }
-
-    iframe {
-        width: 600px;
-        max-width: 100%;
-    }
-
-    /* responsive */
-    @media only screen and (max-width: 650px) {
-        .txt1 h1 {
-            font-size: 59px;
-        }
-
-        .background1 {
-            background-attachment: unset;
-        }
-
+        padding-bottom: 30px;
+        font-size: 47px;
     }
 </style>
 
@@ -92,8 +19,6 @@
     <link rel="icon" href="images/header/black-icon.png" type="image/x-icon">
 
     <!-- meta -->
-    <meta name="description" content="¿Buscas una escuela de manejo confiable en Costa Rica? En la Escuela de Manejo FyK, ofrecemos una educación integral y personalizada para convertirte en un conductor seguro y experimentado. Nuestro equipo de instructores altamente capacitados te guiará a través de lecciones teóricas y prácticas, brindándote las habilidades necesarias para enfrentar cualquier desafío en las carreteras costarricenses. Ya sea que estés aprendiendo a conducir desde cero o deseas mejorar tus habilidades existentes, en Escuela de Manejo FyK encontrarás un ambiente acogedor y propicio para tu éxito. ¡Asegura tu futuro en las vías con la Escuela de Manejo FyK en Costa Rica!">
-
     <meta property="og:image" content="https://escuelademanejofyk.com/images/header/black-icon.png">
     <meta name="twitter:card" content="https://escuelademanejofyk.com/images/header/black-icon.png">
     <meta name="twitter:image" content="https://escuelademanejofyk.com/images/header/black-icon.png">
@@ -124,7 +49,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactenos</title>
+    <title>Alquileres FyK</title>
 
     <!-- Header -->
     <nav class="headermd">
@@ -139,7 +64,7 @@
                     <a href="https://escuelademanejofyk.com/">Inicio</a>
                 </li>
                 <li>
-                    <a href="quienes-somos">¿Quienes Somos?</a>
+                    <a href="quienes-somos">Quienes Somos?</a>
                 </li>
                 <li>
                     <a href="servicios">Servicios</a>
@@ -192,57 +117,22 @@
         }
         navSlide();
     </script>
-
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LL4ZX8V85"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9LL4ZX8V85');
-</script>
 
 <body>
-
-    <div class='background1'>
-        <div class='container'>
-            <div class='bgbox1'>
-                <div class='txt1'>
-                    <h1>Haga su consulta!</h1>
-                    <p>¡Gracias por visitar nuestra página de Contacto! Estamos encantados de responder cualquier pregunta o inquietud que puedas tener. Nuestro equipo de atención al cliente está listo para brindarte asistencia y proporcionarte la información que necesitas. Completa el formulario de preguntas a continuación y nos pondremos en contacto contigo lo antes posible. ¡Esperamos poder ayudarte y brindarte la mejor experiencia posible con nuestros servicios!</p>
-                </div>
-                <div class='form1'>
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-                    <script>
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "40071322",
-                            formId: "b204e7ee-16b0-4163-bdad-c43cfaeb163d"
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class='background2'>
-        <div class='container'>
-            <div class='bgbox2'>
-                <h2>Formulario para Sacar Licencia</h2>
-                <div class='iframe1'>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmBKf-_LyTk6k3h2b4SIlXBr4O7WeCkj-nQnL_3S5Y4H8MPg/viewform?embedded=true" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class='whatsbuttom'>
         <a target=”_blank” href="http://wa.me/50689507788">
             <img src="images/whatsapp.png" alt="">
         </a>
+    </div>
+
+    <div class='background1'>
+        <div class='container'>
+            <div class='title1'>
+                <h1>Alquiler vehiculos</h1>
+            </div>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1lmlk0JQqeddIEAxobXhD4WsHef8Yqt77#grid" width="100%" height="500" frameborder="0"></iframe>
+        </div>
     </div>
 </body>
 <footer>

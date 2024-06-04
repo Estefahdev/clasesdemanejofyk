@@ -147,6 +147,9 @@
                     <a href="servicios">Servicios</a>
                 </li>
                 <li>
+                    <a href="alquileres">Alquileres</a>
+                </li>
+                <li>
                     <a href="contactenos">Contactenos</a>
                 </li>
                 <li>
@@ -191,17 +194,16 @@
         }
         navSlide();
     </script>
-    <div class='announcment1'>
+    <!-- <div class='announcment1'>
         <div class='container'>
             <div class='bgboxano1'>
-                <h1>Curso De Vacaciones de 15 dias 2x1</h1>
+                <h1>¡Septiembre, el mes de la patria! Disfruta de matrícula completamente gratuita en nuestros cursos desde cero tanto en carro como en moto.</h1>
                 <div class='btnox'>
-                    <a target="_blank" href="http://wa.me/50689507788?text=Quiero%20adquirir%20la%20promoción%202x1%20por%20el%20curso%20de%20verano%20de%2015%20días.%20El%20código%20promocional%20es%3A%20FYKPROMOS15">Adquieralo YA</a>
-
+                    <a target="_blank" href="http://wa.me/50689507788?text=¡Quiero%20la%20promoción%20de%20mes%20de%20la%20patria!%20Código%3A%20patCR09">¡Adquiéralo YA!</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </head>
 
 <body>

@@ -3,13 +3,12 @@
 <style>
     /* hero */
     .backgroundhero {
-        background: url(images/home/instructor1.jpg);
+        background: url(images/home/hero-new.jpg);
         background-size: cover;
         background-blend-mode: darken;
         background-attachment: fixed;
         background-color: #0000009e;
-        /* padding: 170px 0px 100px; */
-        height: 750px;
+        height: 600px;
         background-position: center;
     }
 
@@ -20,7 +19,7 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
-        height: 775px;
+        height: 600px;
     }
 
     .boxhero {
@@ -371,6 +370,15 @@
 
     @media only screen and (max-width: 991px) {
 
+        /* hero */
+        .backgroundhero {
+            height: 700px;
+        }
+
+        .bgboxhero {
+            height: 750px;
+        }
+
         /* titles */
         .title1 h1 {
             font-size: 68px;
@@ -395,6 +403,11 @@
             width: 85% !important;
             left: 0 !important;
             top: 0 !important;
+        }
+
+        /*hero*/
+        .backgroundhero {
+            background-attachment: unset;
         }
     }
 </style>
@@ -468,6 +481,9 @@
                     <a href="servicios">Servicios</a>
                 </li>
                 <li>
+                    <a href="alquileres">Alquileres</a>
+                </li>
+                <li>
                     <a href="contactenos">Contactenos</a>
                 </li>
                 <li>
@@ -518,28 +534,30 @@
     <div class='announcment1'>
         <div class='container'>
             <div class='bgboxano1'>
-                <h1>Curso De Vacaciones de 15 dias 2x1</h1>
+                <h1>Curso de verano de 18 horas por ₡225,000. ¡Promoción que incluye el plantel, el costo de la gasolina, el instructor y la
+                prueba con vehículo para el examen de manejo! ¡Aprovecha esta oferta especial y prepárate para conducir con confianza!</h1>
                 <div class='btnox'>
-                    <a target="_blank"
-                        href="http://wa.me/50689507788?text=Quiero%20adquirir%20la%20promoción%202x1%20por%20el%20curso%20de%20verano%20de%2015%20días.%20El%20código%20promocional%20es%3A%20FYKPROMOS15">Adquieralo
-                        YA</a>
-
+                    <a href="https://wa.me/50689507788?text=Dame%20la%20promoci%C3%B3n">Contactar por WhatsApp</a>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9LL4ZX8V85"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'G-9LL4ZX8V85');
 </script>
 
 <body>
+
     <!-- hero -->
     <div class='backgroundhero'>
         <div class='container'>
